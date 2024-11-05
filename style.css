@@ -1,0 +1,28 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+
+  .tour-slider {
+    scroll-snap-type: x mandatory;
+    scroll
+  }
+
+  .tour-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tour-slider > div {
+    scroll-snap-align: start;
+  }
+
+  @media (max-width: 768px) {
+    .tour-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+    }
+
+    .tour-slider > div {
+      min-width: 80%;
+    }
+  }
