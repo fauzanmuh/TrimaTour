@@ -31,9 +31,8 @@
 
     <!-- Header -->
     <header class="absolute top-0 left-0 w-full text-white z-20">
-      <div
-        class="container mx-auto flex justify-between items-center py-4 px-6"
-      >
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <!-- Logo -->
         <div class="flex items-center">
           <img
             alt="TrimaTour Logo"
@@ -43,19 +42,19 @@
             width="150"
           />
         </div>
+    
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-8 text-gray-300">
           <a href="#" class="hover:text-slate-50">Beranda</a>
           <a href="#" class="hover:text-slate-50">Paket Tour</a>
           <a href="#" class="hover:text-slate-50">Tiket Pesawat</a>
         </nav>
-        <div class="flex items-center space-x-4 group">
+    
+        <!-- Profile Dropdown (Desktop) -->
+        <div class="hidden md:flex items-center space-x-4 group">
           <div class="relative">
             <button class="flex items-center space-x-2">
-              <img
-                src="https://placehold.co/30x30"
-                alt="pp"
-                class="w-8 h-8 rounded-full"
-              />
+              <img src="https://placehold.co/30x30" alt="pp" class="w-8 h-8 rounded-full" />
               <span class="text-sm font-bold">Jane Doe</span>
               <i class="fas fa-angle-down"></i>
             </button>
@@ -64,33 +63,53 @@
               class="absolute right-0 mt-6 w-48 bg-white border rounded-md shadow-lg hidden group-hover:block"
             >
               <div class="px-4 py-2 flex space-x-3 items-center">
-                <img
-                  src="https://placehold.co/40x40"
-                  alt="Profile Picture"
-                  class="w-10 h-10 rounded-full"
-                />
+                <img src="https://placehold.co/40x40" alt="Profile Picture" class="w-10 h-10 rounded-full" />
                 <div>
                   <p class="text-sm font-bold text-gray-600">Jane Doe</p>
                   <p class="text-xs text-gray-400">janedoe@gmail.com</p>
                 </div>
               </div>
               <hr />
-              <a
-                href="#"
-                class="block px-4 py-2 text-sm text-gray-950 hover:bg-gray-100 flex items-center space-x-2"
-              >
+              <a href="#" class="block px-4 py-2 text-sm text-gray-950 hover:bg-gray-100 flex items-center space-x-2">
                 <i class="fas fa-user"></i>
                 <span>Beranda Profile</span>
               </a>
-              <a
-                href="#"
-                class="block px-4 py-2 text-sm hover:bg-gray-100 flex items-center space-x-2 text-red-500"
-              >
+              <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 flex items-center space-x-2 text-red-500">
                 <i class="fas fa-sign-out-alt"></i>
                 <span>Log Out</span>
               </a>
             </div>
           </div>
+        </div>
+    
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="md:hidden flex items-center">
+          <button id="hamburgerButton" class="focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden bg-white text-gray-800 absolute top-full left-0 w-full shadow-lg py-4 px-6 hidden"
+      >
+        <nav class="flex flex-col space-y-4">
+          <a href="#" class="hover:text-blue-500">Beranda</a>
+          <a href="#" class="hover:text-blue-500">Paket Tour</a>
+          <a href="#" class="hover:text-blue-500">Tiket Pesawat</a>
+        </nav>
+        <hr class="my-4" />
+        <div class="flex flex-col space-y-4">
+          <a href="#" class="hover:text-blue-500 flex items-center space-x-2">
+            <i class="fas fa-user"></i>
+            <span>Beranda Profile</span>
+          </a>
+          <a href="#" class="text-red-500 hover:text-red-700 flex items-center space-x-2">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log Out</span>
+          </a>
         </div>
       </div>
     </header>
@@ -396,7 +415,6 @@
   </div>
 </section>
 
-
     <!-- Footer -->
     <footer class="bg-sky-950 text-white py-10">
       <div
@@ -482,4 +500,13 @@
       </div>
     </footer>
   </body>
+  
+  <script>
+    const hamburgerButton = document.getElementById("hamburgerButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+  
+    hamburgerButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </html>
