@@ -1,28 +1,64 @@
 body {
-    font-family: "Roboto", sans-serif;
-  }
+  font-family: "Roboto", sans-serif;
+}
 
+// Tour Slider
+.tour-slider {
+  scroll-snap-type: x mandatory;
+}
+
+.tour-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.tour-slider > div {
+  scroll-snap-align: start;
+}
+
+// Inspire Tour
+.slider-container {
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 1 0 50%;
+  box-sizing: border-box;
+}
+
+button.prev,
+button.next {
+  background: #225eee;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
   .tour-slider {
-    scroll-snap-type: x mandatory;
-    scroll
-  }
-
-  .tour-slider::-webkit-scrollbar {
-    display: none;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
   }
 
   .tour-slider > div {
-    scroll-snap-align: start;
+    min-width: 80%;
   }
 
-  @media (max-width: 768px) {
-    .tour-slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-    }
-
-    .tour-slider > div {
-      min-width: 80%;
-    }
+  .slide {
+    flex: 1 0 100%;
   }
+}

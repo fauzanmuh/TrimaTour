@@ -20,6 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
       rel="stylesheet"
     />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -237,11 +246,11 @@
           <div class="mt-4">
             <h4 class="font-bold">Kuta & Kintamani Tur</h4>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-location-dot" style="width: 15px;"></i>
+              <i class="fas fa-location-dot" style="width: 15px"></i>
               <span class="ml-1">Kuta & Kintamani</span>
             </div>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-calendar-alt" style="width: 15px;"></i>
+              <i class="fas fa-calendar-alt" style="width: 15px"></i>
               <span class="ml-1">2 Hari 1 Malam</span>
             </div>
             <div class="flex items-center text-neutral-700 text-sm mt-2">
@@ -256,11 +265,11 @@
           <div class="mt-4">
             <h4 class="font-bold">Kintamani & Tanah Lot Tur</h4>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-location-dot" style="width: 15px;"></i>
+              <i class="fas fa-location-dot" style="width: 15px"></i>
               <span class="ml-1">Kintamani & Tanah Lot</span>
             </div>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-calendar-alt" style="width: 15px;"></i>
+              <i class="fas fa-calendar-alt" style="width: 15px"></i>
               <span class="ml-1">2 Hari 1 Malam</span>
             </div>
             <div class="flex items-center text-neutral-700 text-sm mt-2">
@@ -275,11 +284,11 @@
           <div class="mt-4">
             <h4 class="font-bold">Kuta, Tanah Lot, & Kintamani Tur</h4>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-location-dot" style="width: 15px;"></i>
+              <i class="fas fa-location-dot" style="width: 15px"></i>
               <span class="ml-1">Kuta, Tanah Lot, & Kintamani</span>
             </div>
             <div class="flex items-center text-[#727B8E] text-sm mt-2">
-              <i class="fas fa-calendar-alt" style="width: 15px;"></i>
+              <i class="fas fa-calendar-alt" style="width: 15px"></i>
               <span class="ml-1">3 Hari 2 Malam</span>
             </div>
             <div class="flex items-center text-neutral-700 text-sm mt-2">
@@ -288,7 +297,6 @@
             <p class="mt-4 text-[#FFA800] font-bold">Rp 2,753,850 /pax</p>
           </div>
         </div>
-        
       </div>
       <div class="flex justify-center mt-8 md:hidden">
         <a href="#" class="bg-blue-200 text-blue-600 px-4 py-2 rounded-lg">
@@ -418,48 +426,80 @@
           <h3 class="text-2xl font-bold text-[#30333C]">
             Inspirasi Perjalanan Tur
           </h3>
-          <p class="text-[#989EAC]">
+          <p class="text-[#989EAC] w-3/4 md:w-full">
             Jelajahi blog perjalanan kami untuk inspirasi, tips, dan panduan
           </p>
         </div>
         <a
           href="#"
           class="mt-2 mr-12 md:mt-0 bg-blue-200 text-[#225EEE] px-4 py-2 rounded-lg hidden md:block"
+          >Lihat Semua</a
         >
-          Lihat Semua
-        </a>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8 px-6">
-        <img
-          alt="A scenic view of Bali's hidden gems with lush greenery and traditional structures"
-          class="w-48 h-25 object-cover"
-          width="400"
-          height="300"
-          src="/assets/img/inspire1.png"
-        />
-        <div class="p-10">
-          <h2 class="font-bold text-xl mb-2">Discover Bali's Hidden Gems</h2>
-          <p class="text-gray-700 text-base">
-            Embark on a journey through Bali's lesser-known treasures with our
-            expert guides. Explore secluded beaches, lush rice terra...
-          </p>
+
+      <div class="slider-container overflow-hidden relative pl-4">
+        <div class="slider flex transition-transform duration-500 ease-in-out">
+          <div
+            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
+          >
+            <img
+              src="/assets/img/inspire1.png"
+              alt="Inspirasi 1"
+              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
+            />
+            <div
+              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
+            >
+              <h4 class="font-bold">Discover Bali's Hidden Gems</h4>
+              <p class="text-[#727B8E] text-left text-sm mt-2">
+                Embark on a journey through Bali's lesser-known treasures with our expert guides. Explore secluded beaches, lush rice terraces, and traditional villages off the beaten path
+              </p>
+            </div>
+          </div>
+          <div
+            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
+          >
+            <img
+              src="/assets/img/inspire2.png"
+              alt="Inspirasi 2"
+              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
+            />
+            <div
+              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
+            >
+              <h4 class="font-bold">Bali Adventure Explorer</h4>
+              <p class="text-[#727B8E] text-left text-sm mt-2">
+                Experience Bali like never before with our thrilling adventure tour. From white-water rafting in Ayung River to trekking through volcanic landscapes, this tour is packed with excitement
+              </p>
+            </div>
+          </div>
+          <div
+            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
+          >
+            <img
+              src="/assets/img/inspire3.png"
+              alt="Inspirasi 3"
+              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
+            />
+            <div
+              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
+            >
+              <h4 class="font-bold">Cultural Delights of Bali</h4>
+              <p class="text-[#727B8E] text-left text-sm mt-2">
+                Immerse yourself in Bali's rich culture and history with this tour. Visit ancient temples, witness traditional dance performances, and indulge in authentic Balinese cuisine
+              </p>
+            </div>
+          </div>
         </div>
-        <img
-          alt="A scenic view of Bali's hidden gems with lush greenery and traditional structures"
-          class="w-48 h-25 object-cover"
-          width="400"
-          height="300"
-          src="/assets/img/inspire2.png"
-        />
-        <div class="p-10">
-          <h2 class="font-bold text-xl mb-2">Bali Adventure Explorer</h2>
-          <p class="text-gray-700 text-base">
-            Experience Bali like never before with our thrilling adventure tour.
-            From white-water rafting in Ayung River to trekking through volcanic
-            landscapes, this tour is packed with excitement
-          </p>
-        </div>
-        <!-- Repeat similar structure for other inspiration cards -->
+      </div>
+
+      <div class="controls flex justify-start pl-4 mt-4">
+        <button class="prev bg-[#225EEE] text-white px-4 py-2 rounded-lg mr-2">
+          ❮
+        </button>
+        <button class="next bg-[#225EEE] text-white px-4 py-2 rounded-lg ml-2">
+          ❯
+        </button>
       </div>
     </section>
 
@@ -509,7 +549,7 @@
     <!-- Footer -->
     <footer class="bg-sky-950 text-white py-10">
       <div
-        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-10"
+        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-10"
       >
         <div>
           <div class="flex items-center space-x-2">
@@ -661,5 +701,33 @@
     hamburgerButton.addEventListener("click", () => {
       mobileMenu.classList.toggle("hidden");
     });
+  </script>
+
+  <script>
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    function getSlidesToShow() {
+      return window.innerWidth >= 768 ? 2 : 1;
+    }
+
+    function updateSliderPosition() {
+      const slidesToShow = getSlidesToShow();
+      const slideWidth = slider.offsetWidth / slidesToShow;
+      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      if (currentIndex > 0) currentIndex--;
+      updateSliderPosition();
+    });
+
+    document.querySelector(".next").addEventListener("click", () => {
+      if (currentIndex < slides.length - getSlidesToShow()) currentIndex++;
+      updateSliderPosition();
+    });
+
+    window.addEventListener("resize", updateSliderPosition);
   </script>
 </html>
