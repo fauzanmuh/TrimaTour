@@ -1017,4 +1017,17 @@
       window.addEventListener("resize", updateTourDisplay);
     });
   </script>
+
+  <script>
+    function truncateAllParagraphs(selector, wordLimit) {
+      const paragraphs = document.querySelectorAll(selector);
+      paragraphs.forEach((paragraph) => {
+        const text = paragraph.innerText;
+        const truncated = text.split(" ").slice(0, wordLimit).join(" ") + "...";
+        paragraph.innerText = truncated;
+      });
+    }
+
+    truncateAllParagraphs(".slider p", 17);
+  </script>
 </html>
