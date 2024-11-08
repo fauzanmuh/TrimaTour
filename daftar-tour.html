@@ -314,26 +314,18 @@
         class="flex flex-col md:flex-row justify-between items-start md:items-center pl-4 md:pl-10 mb-12"
       >
         <div class="text-left md:text-left mb-4 md:mb-0">
-          <h3 class="text-[32px] font-bold text-[#30333C]">
+          <h3 class="text-[32px] font-bold text-[#30333C] md:px-8">
             Highlight Tur Wisata Bali
           </h3>
-          <p class="text-[20px] text-[#989EAC]">
+          <p class="text-[20px] text-[#989EAC] mb-8 md:px-8">
             Wisata Bali sering dikunjungi
           </p>
-        </div>
-        <a
-          href="daftar-tour.html"
-          class="mt-2 mr-12 md:mt-0 bg-blue-200 text-[#225EEE] px-4 py-2 rounded-lg hidden md:block"
-        >
-          Lihat Semua Tour
-        </a>
-      </div>
-
-      <div
-        class="tour-slider flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6"
+          
+      <div id="tourItems"
+        class="daftar-tour flex overflow-x-auto md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6"
       >
         <!-- Tour items -->
-        <div class="rounded-lg p-4 flex-shrink-0 w-80 md:w-auto">
+        <div class="tour-item rounded-lg p-4 flex-shrink-0 w-80 md:w-auto">
           <img src="/assets/img/tour1.png" alt="Tour 1" class="rounded-lg" />
           <div class="mt-4">
             <h4 class="text-[20px] font-bold">Kuta & Tanah Lot Tur</h4>
@@ -419,272 +411,10 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center mt-8 md:hidden">
-        <a href="daftar-tour.html" class="bg-blue-200 text-blue-600 px-4 py-2 rounded-lg">
-          Lihat Semua Tour
-        </a>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section
-      class="bg-gradient-to-r from-[#14509E] to-[#0D438B] text-white py-16 md:py-0 px-8 md:px-0"
-    >
-      <div class="container mx-auto flex items-center justify-between">
-        <div class="w-0 md:w-3/5">
-          <img
-            src="/assets/img/left-Illustrations-why-choose-us.png"
-            alt="Gambar"
-            class="w-full max-w-[60%] md:max-w-[100%] lg:max-w-[60%] h-auto object-cover"
-          />
-        </div>
-        <div class="w-full md:w-2/5">
-          <h2
-            class="text-3xl lg:text-3xl md:text-xl font-bold tracking-wider justify-center mb-8"
-          >
-            Mengapa Memilih Kami
-          </h2>
-          <div class="flex flex-col space-y-8">
-            <div class="flex items-center space-x-4">
-              <div class="bg-[#FFF6C5] rounded-[12px] p-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="6 6 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.40558 16.5938C7.73182 14.1353 8.90453 11.8596 10.732 10.1645C11.8849 9.09496 13.2489 8.30269 14.7204 7.82818C14.1671 8.45447 13.7003 9.22399 13.3142 10.0763L13.3141 10.0766C12.8243 11.1599 12.4479 12.4147 12.1949 13.763L12.1945 13.765C12.0225 14.7001 11.9085 15.6449 11.8531 16.5938H7.40558ZM12.1948 22.2366L12.195 22.2375C12.449 23.5851 12.8241 24.8399 13.3141 25.9234L13.3142 25.9237C13.7011 26.7779 14.1691 27.5489 14.724 28.1759C10.8549 26.9311 7.9476 23.5409 7.40477 19.4062H11.8534C11.91 20.3734 12.0243 21.3246 12.1948 22.2366Z"
-                    fill="#984308"
-                    stroke="#984308"
-                    stroke-width="1.125"
-                  />
-                  <path
-                    d="M21.2801 7.82823C22.7516 8.30275 24.1155 9.095 25.2684 10.1645C27.0958 11.8596 28.2685 14.1353 28.5948 16.5938H24.1469C24.0904 15.6266 23.9761 14.6754 23.8055 13.7634L23.8055 13.763C23.5525 12.4152 23.1774 11.1602 22.6862 10.0765C22.3009 9.22376 21.8335 8.45434 21.2801 7.82823ZM23.8055 22.237L23.8058 22.235C23.9779 21.2999 24.0919 20.3551 24.1473 19.4062H28.5956C28.0528 23.5409 25.1455 26.931 21.2765 28.1758C21.8315 27.5489 22.3002 26.7779 22.6863 25.9232C23.1775 24.8396 23.5526 23.5847 23.8055 22.237Z"
-                    fill="#984308"
-                    stroke="#984308"
-                    stroke-width="1.125"
-                  />
-                  <path
-                    opacity="0.5"
-                    d="M17.2057 9.29274L17.2061 9.29237C17.5934 8.93797 17.8629 8.88306 17.9997 8.88306C18.1365 8.88306 18.4062 8.93795 18.7947 9.29255C19.1899 9.65461 19.6184 10.254 20.0117 11.124L20.0122 11.1252C20.4025 11.9835 20.7236 13.0351 20.9466 14.2261C21.0912 15.009 21.1896 15.7996 21.2411 16.5938H14.7595C14.813 15.7794 14.9117 14.9843 15.0528 14.2266C15.2757 13.0369 15.5979 11.9836 15.9876 11.1233L15.9877 11.1231C16.3812 10.2539 16.8108 9.65349 17.2057 9.29274ZM15.0528 21.7733L15.0527 21.7731C14.9107 21.0165 14.8119 20.2209 14.7589 19.4063H21.2406C21.1876 20.2209 21.0887 21.0165 20.9468 21.7731L20.9467 21.7733C20.7239 22.9641 20.4016 24.0164 20.0119 24.8768L20.0118 24.877C19.6182 25.7465 19.1896 26.347 18.7945 26.7089C18.4061 27.0633 18.1365 27.1182 17.9997 27.1182C17.8641 27.1182 17.5934 27.0633 17.2051 26.7078C16.8109 26.3468 16.3811 25.7462 15.9877 24.877L15.9876 24.8768C15.5979 24.0164 15.2756 22.9641 15.0528 21.7733Z"
-                    fill="#984308"
-                    stroke="#984308"
-                    stroke-width="1.125"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg tracking-wider">
-                  keperluan di satu tempat
-                </h3>
-                <p>Dari tiket pesawat dan wisata</p>
-              </div>
-            </div>
-            <div class="flex items-center space-x-4">
-              <div class="bg-[#FFF6C5] rounded-[12px] p-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.216 4.09V4.59904L7.72495 4.58992C8.38957 4.57802 9.13674 4.578 9.984 4.578H14.016C14.8632 4.578 15.6094 4.57802 16.2751 4.58992L16.784 4.59902V4.09V2.692C16.784 2.62658 16.8559 2.5 17.04 2.5C17.2241 2.5 17.296 2.62658 17.296 2.692V4.15V4.61478L17.7595 4.64867C19.181 4.75258 19.9902 5.00461 20.5616 5.52701C21.1197 6.0382 21.3867 6.75015 21.5 8.022V8.5H2.5V8.022C2.61326 6.75046 2.88021 6.0391 3.43867 5.52676C4.01006 5.0045 4.81834 4.75256 6.24043 4.64867L6.704 4.61481V4.15V2.692C6.704 2.62699 6.77644 2.5 6.96 2.5C7.14411 2.5 7.216 2.62658 7.216 2.692V4.09Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                  <path
-                    opacity="0.5"
-                    d="M21.5 12V14C21.5 15.8998 21.4995 17.2741 21.359 18.3222C21.2204 19.3559 20.954 19.9969 20.4765 20.4744C19.9988 20.9521 19.3578 21.2189 18.3246 21.358C17.2769 21.4989 15.9032 21.5 14.004 21.5H10.004C8.10488 21.5 6.73085 21.4989 5.6828 21.358C4.64921 21.2189 4.00764 20.9521 3.52942 20.4743C3.05297 19.9973 2.78662 19.3562 2.64783 18.3225C2.50708 17.2742 2.50602 15.8996 2.50602 14V12C2.50602 11.7307 2.50472 11.398 2.50335 11.0481C2.50127 10.5177 2.49904 9.94799 2.50096 9.5H21.4818C21.4918 10.2472 21.5 11.3325 21.5 12Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                  <path
-                    d="M21.2369 20.8829L21.4618 20.5425C21.7411 20.1197 21.9176 19.6374 21.9774 19.1342C22.0371 18.631 21.9783 18.1209 21.8057 17.6444C21.6332 17.168 21.3516 16.7385 20.9835 16.3903C20.6154 16.042 20.1709 15.7847 19.6857 15.6388C19.2004 15.4929 18.6877 15.4625 18.1886 15.5501C17.6895 15.6376 17.2178 15.8406 16.8111 16.1429C16.4045 16.4452 16.0741 16.8384 15.8464 17.2911C15.6188 17.7438 15.5002 18.2435 15.5 18.7502L21.2369 20.8829ZM21.2369 20.8829L21.5253 21.1715M21.2369 20.8829L21.5253 21.1715M21.5253 21.1715L22.9263 22.5735L22.9326 22.5798M21.5253 21.1715L22.9326 22.5798M22.9326 22.5798L22.9391 22.5859M22.9326 22.5798L22.9391 22.5859M22.9391 22.5859C22.9637 22.6088 22.9834 22.6364 22.9971 22.667C23.0107 22.6977 23.0181 22.7308 23.0187 22.7644C23.0193 22.7979 23.0131 22.8313 23.0005 22.8624L23.4641 23.0497M22.9391 22.5859L23.4641 23.0497M23.4641 23.0497L23.0005 22.8624C22.9879 22.8935 22.9692 22.9218 22.9455 22.9456C22.9217 22.9693 22.8935 22.988 22.8623 23.0006L23.0073 23.3594L22.8623 23.0006C22.8312 23.0132 22.7979 23.0193 22.7643 23.0187C22.7307 23.0181 22.6976 23.0108 22.667 22.9971C22.6363 22.9835 22.6087 22.9638 22.5858 22.9392L22.5797 22.9327M23.4641 23.0497L22.5797 22.9327M22.5797 22.9327L22.5734 22.9264M22.5797 22.9327L22.5734 22.9264M22.5734 22.9264L21.1714 21.5254L20.8827 21.2369M22.5734 22.9264L20.8827 21.2369M20.8827 21.2369L20.5423 21.462M20.8827 21.2369L20.5423 21.462M20.5423 21.462C20.0524 21.7858 19.4839 21.9709 18.8973 21.9975M20.5423 21.462L18.8973 21.9975M18.8973 21.9975C18.3107 22.0241 17.7278 21.8913 17.2106 21.6131M18.8973 21.9975L17.2106 21.6131M17.2106 21.6131C16.6934 21.335 16.2613 20.9219 15.9601 20.4178M17.2106 21.6131L15.9601 20.4178M15.9601 20.4178C15.6589 19.9137 15.4999 19.3374 15.5 18.7502L15.9601 20.4178ZM16.8055 16.8055L17.159 17.1591L16.8055 16.8055C16.5501 17.0609 16.3475 17.364 16.2093 17.6977C16.0711 18.0313 16 18.3889 16 18.7501C16 19.1112 16.0711 19.4688 16.2093 19.8024C16.3475 20.1361 16.5501 20.4393 16.8055 20.6946C17.0608 20.95 17.364 21.1525 17.6976 21.2907C18.0313 21.4289 18.3889 21.5001 18.75 21.5001C19.4793 21.5001 20.1788 21.2103 20.6945 20.6946C21.2103 20.1789 21.5 19.4794 21.5 18.7501C21.5 18.0207 21.2103 17.3213 20.6945 16.8055C20.1788 16.2898 19.4793 16.0001 18.75 16.0001C18.3889 16.0001 18.0313 16.0712 17.6976 16.2094C17.364 16.3476 17.0608 16.5502 16.8055 16.8055Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg tracking-wider">Fleksibel</h3>
-                <p>Opsi pemesanan fleksibel</p>
-              </div>
-            </div>
-            <div class="flex items-center space-x-4">
-              <div class="bg-[#FFF6C5] rounded-[12px] p-3">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="6 6 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    opacity="0.5"
-                    d="M12.2602 26.888H12.26H12C11.5144 26.888 11.2006 26.8869 10.9694 26.8558C10.7527 26.8267 10.6847 26.7796 10.6466 26.7414L10.6453 26.7402C10.6084 26.7035 10.5614 26.6368 10.5322 26.4198C10.5011 26.1886 10.5 25.8746 10.5 25.389V24.277C10.5 23.7078 10.5148 23.6073 10.5668 23.5166C10.6195 23.4247 10.6816 23.3736 11.1205 23.1181C12.3946 22.3771 13.9341 21.8003 15.4455 21.5884C16.9612 21.3759 18.4003 21.5359 19.5229 22.2054C19.6494 22.2809 19.7609 22.3722 19.8588 22.4801L19.8601 22.4815C19.9495 22.5792 20.0184 22.6939 20.0627 22.8187C20.107 22.9435 20.1258 23.0759 20.118 23.2081C20.1102 23.3403 20.0759 23.4696 20.0173 23.5884C19.9586 23.7071 19.8767 23.8129 19.7764 23.8994L19.7674 23.9072L19.7587 23.9154C19.6986 23.9725 19.6252 24.0137 19.5452 24.0354L19.7339 25.0146C19.86 24.9999 19.9817 24.9833 20.0988 24.9649L20.0996 24.9648C21.1375 24.7996 21.9846 24.2473 22.6983 23.708C22.6983 23.708 22.6984 23.7079 22.6985 23.7079L24.5022 22.3461C24.7388 22.1755 25.0232 22.0837 25.315 22.0837C25.6066 22.0837 25.8908 22.1754 26.1274 22.3458C26.5224 22.6467 26.5919 23.0784 26.3868 23.4073C25.9655 24.0826 25.3992 24.8993 24.8802 25.3802C24.3656 25.857 23.5682 26.3048 22.8806 26.6367L22.8805 26.6368C22.1688 26.9806 21.3691 27.1844 20.527 27.3214C18.8298 27.5956 17.0591 27.5532 15.3778 27.2072C14.3523 26.9962 13.3078 26.8885 12.2602 26.888Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                  <path
-                    d="M12.6074 9.64151C12.6773 9.29769 12.7857 9.09344 12.9396 8.93958C13.0934 8.78578 13.2979 8.67743 13.6416 8.60724C13.5548 8.8418 13.418 9.05725 13.2379 9.2374C13.0577 9.41768 12.8422 9.55467 12.6074 9.64151ZM22.3585 8.60745C22.7024 8.67735 22.9066 8.78573 23.0605 8.93958C23.2143 9.09338 23.3226 9.29794 23.3928 9.64158C23.1583 9.55483 22.9428 9.41801 22.7627 9.23794C22.5824 9.05774 22.4454 8.84218 22.3585 8.60745ZM23.0605 15.0605C22.9066 15.2143 22.7024 15.3227 22.3585 15.3926C22.4454 15.1579 22.5824 14.9423 22.7627 14.7621C22.9428 14.582 23.1583 14.4452 23.3928 14.3585C23.3226 14.7021 23.2143 14.9067 23.0605 15.0605ZM13.6415 15.3926C13.2977 15.3227 13.0934 15.2143 12.9396 15.0605C12.7858 14.9067 12.6774 14.7021 12.6072 14.3585C12.8418 14.4452 13.0572 14.582 13.2374 14.7621C13.4177 14.9423 13.5547 15.1579 13.6415 15.3926Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                  <path
-                    d="M15.0052 12.9948C14.5577 12.5473 14.0206 12.2099 13.4361 12C14.0206 11.7901 14.5577 11.4527 15.0052 11.0052C15.6835 10.3269 16.1088 9.44302 16.2205 8.5H19.7795C19.8912 9.44302 20.3165 10.3269 20.9948 11.0052C21.4423 11.4527 21.9794 11.7901 22.5639 12C21.9794 12.2099 21.4423 12.5473 20.9948 12.9948C20.3165 13.6731 19.8912 14.557 19.7795 15.5H16.2205C16.1088 14.557 15.6835 13.6731 15.0052 12.9948ZM18 13.5C18.3978 13.5 18.7794 13.342 19.0607 13.0607C19.342 12.7794 19.5 12.3978 19.5 12C19.5 11.6022 19.342 11.2206 19.0607 10.9393C18.7794 10.658 18.3978 10.5 18 10.5C17.6022 10.5 17.2206 10.658 16.9393 10.9393C16.658 11.2206 16.5 11.6022 16.5 12C16.5 12.3978 16.658 12.7794 16.9393 13.0607C17.2206 13.342 17.6022 13.5 18 13.5Z"
-                    fill="#984308"
-                    stroke="#984308"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-semibold text-lg tracking-wider">
-                  Pembayaran aman dan nyaman
-                </h3>
-                <p>Pembayaran aman dan nyaman</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Travel Inspiration Section -->
-    <section class="py-16">
-      <div
-        class="flex flex-col md:flex-row justify-between items-start md:items-center pl-4 md:pl-10 mb-12"
-      >
-        <div class="text-left md:text-left mb-4 md:mb-0">
-          <h3 class="text-[32px] font-bold text-[#30333C]">
-            Inspirasi Perjalanan Tur
-          </h3>
-          <p class="text-[20px] text-[#989EAC] w-3/4 md:w-full">
-            Jelajahi blog perjalanan kami untuk inspirasi, tips, dan panduan
-          </p>
-        </div>
-        <a
-          href="#"
-          class="mt-2 mr-12 md:mt-0 bg-blue-200 text-[#225EEE] px-4 py-2 rounded-lg hidden md:block"
-          >Lihat Semua</a
-        >
-      </div>
-
-      <div class="slider-container overflow-hidden relative pl-4">
-        <div class="slider flex transition-transform duration-500 ease-in-out">
-          <div
-            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
-          >
-            <img
-              src="/assets/img/inspire1.png"
-              alt="Inspirasi 1"
-              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
-            />
-            <div
-              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
-            >
-              <h4 class="text-[18px] font-bold">Discover Bali's Hidden Gems</h4>
-              <p class="text-[#727B8E] text-left text-[14px] mt-2">
-                Embark on a journey through Bali's lesser-known treasures with
-                our expert guides. Explore secluded beaches, lush rice terraces,
-                and traditional villages off the beaten path
-              </p>
-            </div>
-          </div>
-          <div
-            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
-          >
-            <img
-              src="/assets/img/inspire2.png"
-              alt="Inspirasi 2"
-              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
-            />
-            <div
-              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
-            >
-              <h4 class="text-[18px] font-bold">Bali Adventure Explorer</h4>
-              <p class="text-[14px] text-[#727B8E] text-left text-sm mt-2">
-                Experience Bali like never before with our thrilling adventure
-                tour. From white-water rafting in Ayung River to trekking
-                through volcanic landscapes, this tour is packed with excitement
-              </p>
-            </div>
-          </div>
-          <div
-            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
-          >
-            <img
-              src="/assets/img/inspire3.png"
-              alt="Inspirasi 3"
-              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
-            />
-            <div
-              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
-            >
-              <h4 class="text-[18px] font-bold">Cultural Delights of Bali</h4>
-              <p class="text-[14px] text-[#727B8E] text-left mt-2">
-                Immerse yourself in Bali's rich culture and history with this
-                tour. Visit ancient temples, witness traditional dance
-                performances, and indulge in authentic Balinese cuisine
-              </p>
-            </div>
-          </div>
-          <div
-            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
-          >
-            <img
-              src="/assets/img/inspire4.png"
-              alt="Inspirasi 4"
-              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
-            />
-            <div
-              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
-            >
-              <h4 class="text-[18px] font-bold">Relaxation Retreat in Bali</h4>
-              <p class="text-[14px] text-[#727B8E] text-left text-sm mt-2">
-                Unwind and rejuvenate on our tranquil retreat in Bali. Enjoy
-                luxurious spa treatments, yoga sessions overlooking serene
-                landscapes, and leisurely strolls on pristine beaches
-              </p>
-            </div>
-          </div>
-          <div
-            class="slide flex flex-col md:flex-row rounded-lg p-4 w-full md:w-1/2"
-          >
-            <img
-              src="/assets/img/inspire5.png"
-              alt="Inspirasi 5"
-              class="rounded-lg w-48 h-48 mx-auto md:mx-0"
-            />
-            <div
-              class="mt-4 md:mt-0 md:ml-4 md:flex md:flex-col md:justify-center text-center md:text-left"
-            >
-              <h4 class="text-[18px] font-bold">Bali Family Adventure</h4>
-              <p class="text-[14px] text-[#727B8E] text-left mt-2">
-                Create unforgettable memories with your family on our Bali
-                adventure. From thrilling water sports to family-friendly
-                cultural activities, there's something for everyone to enjoy
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="controls flex justify-center mt-4">
-        <button class="prev bg-[#225EEE] text-white px-4 py-2 rounded-lg mr-2">
-          ❮
-        </button>
-        <button class="next bg-[#225EEE] text-white px-4 py-2 rounded-lg ml-2">
-          ❯
-        </button>
-      </div>
-      <div class="flex justify-center mt-8 md:hidden">
-        <a href="#" class="bg-blue-200 text-blue-600 px-4 py-2 rounded-lg">
-          Lihat Semua
-        </a>
+      <div class="flex justify-center mt-8">
+        <button id="showMoreBtn" class="bg-blue-200 text-blue-600 px-4 py-2 rounded-lg">
+            Tampilkan Lebih Banyak
+          </button>
       </div>
     </section>
 
@@ -949,13 +679,13 @@
   </script>
 
   <!-- <script>
-    const hamburgerButton = document.getElementById("hamburgerButton");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    hamburgerButton.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script> -->
+      const hamburgerButton = document.getElementById("hamburgerButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      
+      hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        });
+    </script> -->
 
   <script>
     const hamburgerButton = document.getElementById("hamburger");
@@ -967,67 +697,35 @@
       mobileNav.classList.toggle("hidden");
     });
   </script>
-
-  <script>
-    const slider = document.querySelector(".slider");
-    const slides = document.querySelectorAll(".slide");
-    let currentIndex = 0;
-
-    function getSlidesToShow() {
-      return window.innerWidth >= 768 ? 2 : 1;
-    }
-
-    function updateSliderPosition() {
-      const slidesToShow = getSlidesToShow();
-      const slideWidth = slider.offsetWidth / slidesToShow;
-      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-    }
-
-    document.querySelector(".prev").addEventListener("click", () => {
-      if (currentIndex > 0) currentIndex--;
-      updateSliderPosition();
-    });
-
-    document.querySelector(".next").addEventListener("click", () => {
-      if (currentIndex < slides.length - getSlidesToShow()) currentIndex++;
-      updateSliderPosition();
-    });
-
-    window.addEventListener("resize", updateSliderPosition);
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const tourSlider = document.querySelector(".tour-slider");
-      const tourItems = tourSlider.querySelectorAll(".tour-slider > div");
-
-      function updateTourDisplay() {
-        const isDesktop = window.innerWidth >= 768;
-
-        tourItems.forEach((item, index) => {
-          if (isDesktop) {
-            item.style.display = index < 4 ? "block" : "none";
-          } else {
-            item.style.display = "block";
+  
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        const tourItems = document.querySelectorAll('.tour-item');
+        const showMoreBtn = document.getElementById('showMoreBtn');
+        
+        // Menentukan jumlah item yang ditampilkan berdasarkan ukuran layar
+        let itemsPerPage;
+        if (window.innerWidth <= 640) {  // Mobile (<= 640px)
+          itemsPerPage = 5;
+        } else if (window.innerWidth <= 1024) {  // Tablet (<= 1024px)
+          itemsPerPage = 8;
+        } else {  // Desktop (> 1024px)
+          itemsPerPage = 8;
+        }
+    
+        // Menyembunyikan item setelah jumlah yang ditentukan
+        for (let i = itemsPerPage; i < tourItems.length; i++) {
+          tourItems[i].style.display = 'none';
+        }
+    
+        // Menangani klik pada tombol "Tampilkan Lebih Banyak"
+        showMoreBtn.addEventListener('click', function() {
+          // Menampilkan semua item
+          for (let i = 0; i < tourItems.length; i++) {
+            tourItems[i].style.display = 'block';
           }
+          showMoreBtn.style.display = 'none';  // Menyembunyikan tombol
         });
-      }
-
-      updateTourDisplay();
-      window.addEventListener("resize", updateTourDisplay);
-    });
-  </script>
-
-  <script>
-    function truncateAllParagraphs(selector, wordLimit) {
-      const paragraphs = document.querySelectorAll(selector);
-      paragraphs.forEach((paragraph) => {
-        const text = paragraph.innerText;
-        const truncated = text.split(" ").slice(0, wordLimit).join(" ") + "...";
-        paragraph.innerText = truncated;
       });
-    }
-
-    truncateAllParagraphs(".slider p", 17);
-  </script>
+    </script>
 </html>
